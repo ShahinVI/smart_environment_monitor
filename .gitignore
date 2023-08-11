@@ -1,3 +1,6 @@
+flask_app/.idea
+flask_app/.DS_Store
+
 Smart_Environment_Monitor/build
 Smart_Environment_Monitor/cmake-build-debug
 Smart_Environment_Monitor/pytest_hello_world.py

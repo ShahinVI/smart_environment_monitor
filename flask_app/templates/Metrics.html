@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://www.pythonanywhere.com/user/shahinvi/files/home/shahinvi/mysite/templates/metrics.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="./Metrics_files/bootstrap.min.css" rel="stylesheet">
+    <title>Metrics</title>
+</head>
+<body class="bg-light p-5" data-new-gr-c-s-check-loaded="14.1119.0" data-gr-ext-installed="">
+
+<div class="container">
+    <!-- Temperature -->
+    <div class="mb-5">
+        <h2 class="text-primary mb-3">Temperature</h2>
+
+        <h4 class="mb-2">Today ({{ today_metrics.date }})</h4>
+        <p>Current: {{ today_metrics.current_temp }}   🍀
+        Average: {{ today_metrics.avg_temp }}°C   🍀
+        Highest: {{ today_metrics.highest_temp }}   🍀
+        Lowest: {{ today_metrics.lowest_temp }}</p>
+
+        <h4 class="mb-2">Yesterday ({{ yesterday_metrics.date }})</h4>
+        <p>Average: {{ yesterday_metrics.avg_temp }}°C   🍀
+        Highest: {{ yesterday_metrics.highest_temp }}   🍀
+        Lowest: {{ yesterday_metrics.lowest_temp }}</p>
+    </div>
+
+    <!-- Humidity -->
+    <div>
+        <h2 class="text-success mb-3">Humidity</h2>
+
+        <h4 class="mb-2">Today ({{ today_metrics.date }})</h4>
+        <p>Current: {{ today_metrics.current_humidity }}   🍀
+        Average: {{ today_metrics.avg_humidity }}%   🍀
+        Highest: {{ today_metrics.highest_humidity }}   🍀
+        Lowest: {{ today_metrics.lowest_humidity }}</p>
+
+        <h4 class="mb-2">Yesterday ({{ yesterday_metrics.date }})</h4>
+        <p>Average: {{ yesterday_metrics.avg_humidity }}%   🍀
+        Highest: {{ yesterday_metrics.highest_humidity }}   🍀
+        Lowest: {{ yesterday_metrics.lowest_humidity }}</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="./Metrics_files/jquery.min.js"></script>
+<script src="./Metrics_files/popper.min.js"></script>
+<script src="./Metrics_files/bootstrap.min.js"></script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
