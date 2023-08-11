@@ -19,3 +19,5 @@ berlin_weather/.ipynb_checkpoints
 berlin_weather/berlin_weather_2014_2023.csv
 berlin_weather/file_name4.csv
 
+.DS_Store
+.idea
